@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">BurgerMeStock</string>
+    <string name="cone_de_cadeado">Ícone de cadeado</string>
+    <string name="icone_de_uma_pessoa">icone de uma pessoa</string>
+    <string name="usu_rio">Usuário</string>
+    <string name="senha">Senha</string>
 </resources>

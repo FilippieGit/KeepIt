@@ -8,7 +8,13 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.google.android.material.button.MaterialButton;
+import com.google.android.material.textfield.TextInputEditText;
+
 public class LoginActivity extends AppCompatActivity {
+
+    MaterialButton btnEsqSenha, btnEntrar;
+    TextInputEditText txtSenha, txtEmail;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,5 +26,13 @@ public class LoginActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        //apresentando as variáveis do java para o xml
+        btnEntrar = findViewById(R.id.btnLoginEntrar);
+        txtEmail = findViewById(R.id.idTextoUsuario);
+        txtSenha = findViewById(R.id.idTextoSenha);
+        btnEsqSenha = findViewById(R.id.btnLoginEsqueceuSenha);
+
+
     }
 }
