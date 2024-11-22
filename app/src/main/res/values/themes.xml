@@ -4,8 +4,8 @@
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
 
-        <item name="colorPrimary">#616080</item>
-        <item name="colorOnPrimary">#cfd8ea</item>
+        <item name="colorPrimary">#f29737</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
 
     </style>
 

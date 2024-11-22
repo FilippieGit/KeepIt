@@ -27,7 +27,6 @@
         android:textSize="28sp" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/idTextoUsuario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
@@ -37,13 +36,14 @@
         app:startIconDrawable="@drawable/baseline_person">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/idTextoUsuario"
             android:layout_width="match_parent"
+            android:fontFamily="@font/avocadoregular"
             android:layout_height="match_parent" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/idTextoSenha"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
@@ -53,24 +53,50 @@
         app:startIconDrawable="@drawable/baseline_lock">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/idTextoSenha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/avocadoregular"
             android:inputType="textPassword" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <Button
-        android:id="@+id/btnLoginEntrar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="Entrar" />
 
-    <Button
-        android:id="@+id/btnLoginEsqueceuSenha"
-        style="@style/Widget.Material3.Button.TextButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Esqueceu sua senha?" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnLoginEntrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/avocadoregular"
+            android:text="Entrar"
+            />
+
+        <Button
+            android:id="@+id/btnLoginEsqueceuSenha"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnLoginEntrar"
+            android:layout_alignLeft="@id/btnLoginEntrar"
+            android:fontFamily="@font/avocadoregular"
+            android:text="Esqueceu sua senha?" />
+
+        <Button
+            android:id="@+id/btnLoginCriarConta"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnLoginEntrar"
+            android:layout_alignRight="@id/btnLoginEntrar"
+            android:fontFamily="@font/avocadoregular"
+            android:text="Criar conta" />
+
+
+    </RelativeLayout>
+
 
 </LinearLayout>
